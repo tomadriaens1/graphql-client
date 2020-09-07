@@ -49,7 +49,7 @@ namespace GraphQL.Client.Tests.Http
 				this.LastRequest = request;
 				this.LastCancellationToken = cancellationToken;
 				var response = new HttpResponseMessage(System.Net.HttpStatusCode.OK){
-					Content = new StringContent("{}")
+					Content = new StringContent("{test}")
 				};
 				return Task.FromResult(response);
 			}
